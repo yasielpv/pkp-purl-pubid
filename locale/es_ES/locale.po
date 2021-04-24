@@ -1,0 +1,192 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: locale.xml conversion\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-24 15:42-0500\n"
+"PO-Revision-Date: 2021-04-24 15:42-0500\n"
+"Last-Translator: \n"
+"Language-Team: Spanish (Spain)\n"
+"Language: es-ES\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz\n"
+"X-Loco-Source-Locale: es-ES\n"
+"X-Loco-Api-Version: 1.0.25 20210310-1"
+
+msgid "plugins.pubIds.purl.displayName"
+msgstr "PURL"
+
+msgid "plugins.pubIds.purl.description"
+msgstr ""
+"Este módulo activa la asiganción de PURL (Localizador Persistente y Uniforme "
+"de Recursos) de los números, artículos y galeradas en OJS."
+
+#. settings form
+msgid "plugins.pubIds.purl.manager.settings.description"
+msgstr "Configura el módulo PURL para poder administrar y usar PURLs en OJS:"
+
+msgid "plugins.pubIds.purl.manager.settings.purlObjects"
+msgstr "Contenido de la revista"
+
+msgid "plugins.pubIds.purl.manager.settings.purlObjectsRequired"
+msgstr "Escoja los objetos a los que asignar PURLs."
+
+msgid "plugins.pubIds.purl.manager.settings.explainPURLs"
+msgstr ""
+"Escoja los objetos publicados al los que asignar PURL (Localizador "
+"Persistente y Uniforme de Recursos):"
+
+msgid "plugins.pubIds.purl.manager.settings.enableIssuePURL"
+msgstr "Números"
+
+msgid "plugins.pubIds.purl.manager.settings.enableSubmissionPURL"
+msgstr "Artículos"
+
+msgid "plugins.pubIds.purl.manager.settings.enableRepresentationPURL"
+msgstr "Galeradas"
+
+msgid "plugins.pubIds.purl.manager.settings.purlPrefix"
+msgstr "Prefijo PURL"
+
+msgid "plugins.pubIds.purl.manager.settings.purlPrefix.description"
+msgstr "El prefijo PURL es la parte no cambiante del PURL."
+
+msgid "plugins.pubIds.purl.manager.settings.purlSuffix"
+msgstr "Sufijo PURL"
+
+msgid "plugins.pubIds.purl.manager.settings.purlSuffix.description"
+msgstr ""
+"El sufijo PURL pude tomar cualquier forma, pero debe ser único entre todos "
+"los objetos publicados bajo un mismo prefijo PURL:"
+
+msgid "plugins.pubIds.purl.manager.settings.purlSuffixPattern"
+msgstr ""
+"Indique el patrón que desea emplear para generar sufijos PURL. Utilice %j "
+"para las iniciales de la revista, %v para el número de volúmen, %i para el "
+"número de número, %s para el ID del número, %Y para el año, %a para el ID de "
+"artículo, %g para el ID de galerada, %f para el ID de fichero, %p para el "
+"número de página y %x para el \"Identificador personalizado\""
+
+msgid "plugins.pubIds.purl.manager.settings.purlSuffixPattern.example"
+msgstr "Por ejemplo, vol%viss%ipp%p crearía el sufijo PURL \"vol3iss2pp230\"."
+
+msgid "plugins.pubIds.purl.manager.settings.purlSuffixPattern.issues"
+msgstr "para números"
+
+msgid "plugins.pubIds.purl.manager.settings.purlSuffixPattern.submissions"
+msgstr "para artículos"
+
+msgid "plugins.pubIds.purl.manager.settings.purlSuffixPattern.representations"
+msgstr "para galeradas"
+
+msgid "plugins.pubIds.purl.manager.settings.purlIssueSuffixPatternRequired"
+msgstr "Introduzca el patrón de sufijo PURL para los números."
+
+msgid ""
+"plugins.pubIds.purl.manager.settings.purlSubmissionSuffixPatternRequired"
+msgstr "Introduzca el patrón de sufijo PURL para los artículos."
+
+msgid ""
+"plugins.pubIds.purl.manager.settings.purlRepresentationSuffixPatternRequired"
+msgstr "Introduzca el patrón de sufijo PURL para las galeradas."
+
+msgid "plugins.pubIds.purl.manager.settings.purlSuffixDefault"
+msgstr "Usar los patrones por defecto."
+
+msgid "plugins.pubIds.purl.manager.settings.purlSuffixDefault.description"
+msgstr ""
+"%j.v%vi%i para números<br />%j.v%vi%i.%a para artículos<br />%j.v%vi%i.%a."
+"g%g para galeradas."
+
+msgid "plugins.pubIds.purl.manager.settings.purlSuffixCustomIdentifier"
+msgstr ""
+"Introduzca un sufijo PURL individual para cada item publicado. Encontrará un "
+"campo adicional para el PURL en la pàgina de metadatos de cada item."
+
+msgid "plugins.pubIds.purl.manager.settings.purlResolver"
+msgstr "URL de resolución"
+
+msgid "plugins.pubIds.purl.manager.settings.purlResolver.description"
+msgstr "(p.ej. http://purl.org/)"
+
+msgid "plugins.pubIds.purl.manager.settings.form.purlResolverRequired"
+msgstr "Introduzca la URL de resolución."
+
+msgid "plugins.pubIds.purl.manager.settings.purlReassign"
+msgstr "Reasignar PURLs"
+
+msgid "plugins.pubIds.purl.manager.settings.purlReassign.description"
+msgstr ""
+"Si cambia su configuración PURL, los PURLs ya asignados no se verán "
+"afectadas. Cuando guarde la configuración PURL, podrá usar este botón para "
+"limpiar los PURLs existentes, de forma que la nueva configuración tenga "
+"efecto para todos los objetos exitentes."
+
+msgid "plugins.pubIds.purl.manager.settings.purlReassign.confirm"
+msgstr "¿Está seguro/a de que querer borrar todos los PURLs existentes?"
+
+#. metadata form
+msgid "plugins.pubIds.purl.editor.purl"
+msgstr "PURL"
+
+msgid "plugins.pubIds.purl.editor.purlObjectTypeIssue"
+msgstr "número"
+
+msgid "plugins.pubIds.purl.editor.purlObjectTypeSubmission"
+msgstr "artículo"
+
+msgid "plugins.pubIds.purl.editor.purlObjectTypeRepresentation"
+msgstr "galerada"
+
+msgid "plugins.pubIds.purl.editor.customSuffixMissing"
+msgstr "No se puede asignar un PURL porque falta el sufijo personalizado."
+
+msgid "plugins.pubIds.purl.editor.patternNotResolved"
+msgstr "No se puede asignar un PURL porque contiene patrones sin resolver."
+
+msgid "plugins.pubIds.purl.editor.canBeAssigned"
+msgstr ""
+"Lo que se muestra es una vista previa del PURL. Seleccione la casilla de "
+"verificación y guarde el formulario para asignar el PURL."
+
+msgid "plugins.pubIds.purl.editor.assigned"
+msgstr "El PURL asignado a este {$pubObjectType}."
+
+msgid "plugins.pubIds.purl.editor.purlSuffixCustomIdentifierNotUnique"
+msgstr ""
+"El sufijo PURL dado ya está en uso para otro elemento publicado. Ingrese un "
+"sufijo PURL único para cada elemento."
+
+msgid "plugins.pubIds.purl.editor.clearObjectsPURL"
+msgstr "Limpiar PURL"
+
+msgid "plugins.pubIds.purl.editor.clearObjectsPURL.confirm"
+msgstr "¿Está seguro/a de querer borrar todos los PURL existentes?"
+
+msgid "plugins.pubIds.purl.editor.clearIssueObjectsPURL"
+msgstr "Limpiar PURLs de los Objetos del Número"
+
+msgid "plugins.pubIds.purl.editor.clearIssueObjectsPURL.confirm"
+msgstr ""
+"¿Está seguro/a de querer borrar todos los PURLs de los objetos del número?"
+
+msgid "plugins.pubIds.purl.editor.clearIssueObjectsPURL.description"
+msgstr ""
+"Use la siguiente opción para limpiar los PURLs de todos los objetos "
+"(artículos y galerias) actualmente programados para este número."
+
+#. assignment form
+msgid "plugins.pubIds.purl.editor.assignPURL"
+msgstr "Asignar el PURL {$pubId} a este {$pubObjectType}"
+
+msgid "plugins.pubIds.purl.editor.assignPURL.emptySuffix"
+msgstr "El PURL no se puede asignar porque falta el sufijo personalizado."
+
+msgid "plugins.pubIds.purl.editor.assignPURL.pattern"
+msgstr ""
+"El PURL {$pubId} no se puede asignar porque contiene patrones sin resolver."
+
+msgid "plugins.pubIds.purl.editor.assignPURL.assigned"
+msgstr "Se ha asignado el PURL {$pubId}."

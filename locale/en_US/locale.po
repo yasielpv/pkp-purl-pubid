@@ -1,0 +1,194 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: locale.xml conversion\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-24 15:41-0500\n"
+"PO-Revision-Date: 2021-04-24 15:41-0500\n"
+"Last-Translator: \n"
+"Language-Team: English (USA)\n"
+"Language: en-US\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz\n"
+"X-Loco-Source-Locale: en-US\n"
+"X-Loco-Api-Version: 1.0.25 20210310-1"
+
+msgid "plugins.pubIds.purl.displayName"
+msgstr "PURL"
+
+msgid "plugins.pubIds.purl.description"
+msgstr ""
+"This plugin enables the assignment of the Persistent Uniform Resource "
+"Locator to the issues, articles and galleys in OJS."
+
+#. settings form
+msgid "plugins.pubIds.purl.manager.settings.description"
+msgstr ""
+"Please configure the PURL plugin to be able to manage and use PURLs in OJS:"
+
+msgid "plugins.pubIds.purl.manager.settings.purlObjects"
+msgstr "Journal Content"
+
+msgid "plugins.pubIds.purl.manager.settings.purlObjectsRequired"
+msgstr "Please choose the objects PURLs should be assigned to."
+
+msgid "plugins.pubIds.purl.manager.settings.explainPURLs"
+msgstr ""
+"Please select the publishing objects that will have Persistent Uniform "
+"Resource Locator (PURL) assigned:"
+
+msgid "plugins.pubIds.purl.manager.settings.enableIssuePURL"
+msgstr "Issues"
+
+msgid "plugins.pubIds.purl.manager.settings.enableSubmissionPURL"
+msgstr "Articles"
+
+msgid "plugins.pubIds.purl.manager.settings.enableRepresentationPURL"
+msgstr "Galleys"
+
+msgid "plugins.pubIds.purl.manager.settings.purlPrefix"
+msgstr "PURL Prefix"
+
+msgid "plugins.pubIds.purl.manager.settings.purlPrefix.description"
+msgstr "The PURL prefix is the fix, never changing part of the PURL."
+
+msgid "plugins.pubIds.purl.manager.settings.purlSuffix"
+msgstr "PURL Suffix"
+
+msgid "plugins.pubIds.purl.manager.settings.purlSuffix.description"
+msgstr ""
+"A PURL suffix can take any form, but must be unique among all publishing "
+"objects with the same PURL prefix assigned:"
+
+msgid "plugins.pubIds.purl.manager.settings.purlSuffixPattern"
+msgstr ""
+"Use the pattern entered below to generate PURL suffixes. Use %j for journal "
+"initials, %v for the volume number, %i for the issue number, %s para el ID "
+"del número, %Y for the year, %a for the OJS article ID, %g for the OJS "
+"galley ID, %f for the OJS file ID, %p for the page number and %x for "
+"\"Custom Identifier\"."
+
+msgid "plugins.pubIds.purl.manager.settings.purlSuffixPattern.example"
+msgstr ""
+"For example, vol%viss%ipp%p could create the PURL suffix \"vol3iss2pp230\"."
+
+msgid "plugins.pubIds.purl.manager.settings.purlSuffixPattern.issues"
+msgstr "for issues"
+
+msgid "plugins.pubIds.purl.manager.settings.purlSuffixPattern.submissions"
+msgstr "for articles"
+
+msgid "plugins.pubIds.purl.manager.settings.purlSuffixPattern.representations"
+msgstr "for galleys"
+
+msgid "plugins.pubIds.purl.manager.settings.purlIssueSuffixPatternRequired"
+msgstr "Please enter the PURL suffix pattern for issues."
+
+msgid ""
+"plugins.pubIds.purl.manager.settings.purlSubmissionSuffixPatternRequired"
+msgstr "Please enter the PURL suffix pattern for articles."
+
+msgid ""
+"plugins.pubIds.purl.manager.settings.purlRepresentationSuffixPatternRequired"
+msgstr "Please enter the PURL suffix pattern for galleys."
+
+msgid "plugins.pubIds.purl.manager.settings.purlSuffixDefault"
+msgstr "Use default patterns."
+
+msgid "plugins.pubIds.purl.manager.settings.purlSuffixDefault.description"
+msgstr ""
+"%j.v%vi%i for issues<br />%j.v%vi%i.%a for articles<br />%j.v%vi%i.%a.g%g "
+"for galleys."
+
+msgid "plugins.pubIds.purl.manager.settings.purlSuffixCustomIdentifier"
+msgstr ""
+"Enter an individual PURL suffix for each published item. You'll find an "
+"additional PURL input field on each item's metadata page."
+
+msgid "plugins.pubIds.purl.manager.settings.purlResolver"
+msgstr "Resolver URL"
+
+msgid "plugins.pubIds.purl.manager.settings.purlResolver.description"
+msgstr "(e.g. https://n2t.net/)"
+
+msgid "plugins.pubIds.purl.manager.settings.form.purlResolverRequired"
+msgstr "Please enter the resolver URL."
+
+msgid "plugins.pubIds.purl.manager.settings.purlReassign"
+msgstr "Reassign PURLs"
+
+msgid "plugins.pubIds.purl.manager.settings.purlReassign.description"
+msgstr ""
+"If you change your PURL configuration, PURLs that have already been assigned "
+"will not be affected. Once the PURL configuration is saved, use this button "
+"to clear all existing PURLs so that the new settings will take effect with "
+"existing objects."
+
+msgid "plugins.pubIds.purl.manager.settings.purlReassign.confirm"
+msgstr "Are you sure you wish to delete all existing PURLs?"
+
+#. metadata form
+msgid "plugins.pubIds.purl.editor.purl"
+msgstr "PURL"
+
+msgid "plugins.pubIds.purl.editor.purlObjectTypeIssue"
+msgstr "issue"
+
+msgid "plugins.pubIds.purl.editor.purlObjectTypeSubmission"
+msgstr "article"
+
+msgid "plugins.pubIds.purl.editor.purlObjectTypeRepresentation"
+msgstr "galley"
+
+msgid "plugins.pubIds.purl.editor.customSuffixMissing"
+msgstr "The PURL cannot be assigned because the custom suffix is missing."
+
+msgid "plugins.pubIds.purl.editor.patternNotResolved"
+msgstr "The PURL cannot be assigned because it contains an unresolved pattern."
+
+msgid "plugins.pubIds.purl.editor.canBeAssigned"
+msgstr ""
+"What you see is a preview of the PURL. Select the checkbox and save the form "
+"to assign the PURL."
+
+msgid "plugins.pubIds.purl.editor.assigned"
+msgstr "The PURL is assigned to this {$pubObjectType}."
+
+msgid "plugins.pubIds.purl.editor.purlSuffixCustomIdentifierNotUnique"
+msgstr ""
+"The given PURL suffix is already in use for another published item. Please "
+"enter a unique PURL suffix for each item."
+
+msgid "plugins.pubIds.purl.editor.clearObjectsPURL"
+msgstr "Clear PURL"
+
+msgid "plugins.pubIds.purl.editor.clearObjectsPURL.confirm"
+msgstr "Are you sure you wish to delete the existing PURL?"
+
+msgid "plugins.pubIds.purl.editor.clearIssueObjectsPURL"
+msgstr "Clear Issue Objects PURLs"
+
+msgid "plugins.pubIds.purl.editor.clearIssueObjectsPURL.confirm"
+msgstr "Are you sure you wish to delete the existing issue objects PURLs?"
+
+msgid "plugins.pubIds.purl.editor.clearIssueObjectsPURL.description"
+msgstr ""
+"Use the following option to clear PURLs of all objects (articles and galleys)"
+" currently scheduled for this issue."
+
+#. assignment form
+msgid "plugins.pubIds.purl.editor.assignPURL"
+msgstr "Assign the PURL {$pubId} to this {$pubObjectType}"
+
+msgid "plugins.pubIds.purl.editor.assignPURL.emptySuffix"
+msgstr "The PURL cannot be assigned because the custom suffix is missing."
+
+msgid "plugins.pubIds.purl.editor.assignPURL.pattern"
+msgstr ""
+"The PURL {$pubId} cannot be assigned because it contains an unresolved "
+"pattern."
+
+msgid "plugins.pubIds.purl.editor.assignPURL.assigned"
+msgstr "The PURL {$pubId} has been assigned."
