@@ -206,6 +206,9 @@ msgstr "Galley: {$galleyLabel}"
 msgid "plugins.pubIds.purl.editor.preview.objects"
 msgstr "Item"
 
+msgid "plugins.pubIds.purl.editor.preview.publication"
+msgstr "Article"
+
 msgid "plugins.pubIds.purl.editor.assignPURL.emptySuffix"
 msgstr "The PURL cannot be assigned because the custom suffix is missing."
 

@@ -438,9 +438,9 @@ class PURLPubIdPlugin extends PubIdPlugin {
             $purlTableRows = [];
             if ($publicationPurlEnabled) {
                 if ($form->publication->getData('pub-id::purl')) {
-                    $purlTableRows[] = [$form->publication->getData('pub-id::purl'), 'Publication'];
+                    $purlTableRows[] = [$form->publication->getData('pub-id::purl'), __('plugins.pubIds.purl.editor.preview.publication')];
                 } else {
-                    $purlTableRows[] = [$warningIconHtml . __('submission.status.unassigned'), 'Publication'];
+                    $purlTableRows[] = [$warningIconHtml . __('submission.status.unassigned'), __('plugins.pubIds.purl.editor.preview.publication')];
                 }
             }
             if ($galleyPurlEnabled) {

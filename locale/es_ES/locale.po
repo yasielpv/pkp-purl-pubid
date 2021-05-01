@@ -160,6 +160,9 @@ msgstr "El PURL asignado a este {$pubObjectType}."
 msgid "plugins.pubIds.purl.editor.preview.objects"
 msgstr "Ítem"
 
+msgid "plugins.pubIds.purl.editor.preview.publication"
+msgstr "Artículo"
+
 msgid "plugins.pubIds.purl.editor.preview.galleys"
 msgstr "Galerada: {$galleyLabel}"
 
