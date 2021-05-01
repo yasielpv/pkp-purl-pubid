@@ -21,24 +21,24 @@ class PURLSettingsForm extends Form {
 	// Private properties
 	//
 	/** @var integer */
-	var $_contextId;
+	public $_contextId;
 
 	/**
 	 * Get the context ID.
 	 * @return integer
 	 */
-	function _getContextId() {
+	public function _getContextId() {
 		return $this->_contextId;
 	}
 
 	/** @var PURLPubIdPlugin */
-	var $_plugin;
+	public $_plugin;
 
 	/**
 	 * Get the plugin.
 	 * @return PURLPubIdPlugin
 	 */
-	function _getPlugin() {
+	public function _getPlugin() {
 		return $this->_plugin;
 	}
 
@@ -50,7 +50,7 @@ class PURLSettingsForm extends Form {
 	 * @param $plugin PURLPubIdPlugin
 	 * @param $contextId integer
 	 */
-	function __construct($plugin, $contextId) {
+	public function __construct($plugin, $contextId) {
 		$this->_contextId = $contextId;
 		$this->_plugin = $plugin;
 
@@ -58,14 +58,14 @@ class PURLSettingsForm extends Form {
 
 		$form = $this;
 		$this->addCheck(new FormValidatorCustom($this, 'purlObjects', 'required', 'plugins.pubIds.purl.manager.settings.purlObjectsRequired', function($enableIssuePURL) use ($form) {
-			return $form->getData('enableIssuePURL') || $form->getData('enableSubmissionPURL') || $form->getData('enableRepresentationPURL');
+			return $form->getData('enableIssuePURL') || $form->getData('enablePublicationPURL') || $form->getData('enableRepresentationPURL');
 		}));
 		$this->addCheck(new FormValidatorCustom($this, 'purlIssueSuffixPattern', 'required', 'plugins.pubIds.purl.manager.settings.purlIssueSuffixPatternRequired', function($purlIssueSuffixPattern) use ($form) {
 			if ($form->getData('purlSuffix') == 'pattern' && $form->getData('enableIssuePURL')) return $purlIssueSuffixPattern != '';
 			return true;
 		}));
-		$this->addCheck(new FormValidatorCustom($this, 'purlSubmissionSuffixPattern', 'required', 'plugins.pubIds.purl.manager.settings.purlSubmissionSuffixPatternRequired', function($purlSubmissionSuffixPattern) use ($form) {
-			if ($form->getData('purlSuffix') == 'pattern' && $form->getData('enableSubmissionPURL')) return $purlSubmissionSuffixPattern != '';
+		$this->addCheck(new FormValidatorCustom($this, 'purlPublicationSuffixPattern', 'required', 'plugins.pubIds.purl.manager.settings.purlSubmissionSuffixPatternRequired', function($purlPublicationSuffixPattern) use ($form) {
+			if ($form->getData('purlSuffix') == 'pattern' && $form->getData('enablePublicationPURL')) return $purlPublicationSuffixPattern != '';
 			return true;
 		}));
 		$this->addCheck(new FormValidatorCustom($this, 'purlRepresentationSuffixPattern', 'required', 'plugins.pubIds.purl.manager.settings.purlRepresentationSuffixPatternRequired', function($purlRepresentationSuffixPattern) use ($form) {
@@ -102,7 +102,7 @@ class PURLSettingsForm extends Form {
 	/**
 	 * @copydoc Form::initData()
 	 */
-	function initData() {
+	public function initData() {
 		$contextId = $this->_getContextId();
 		$plugin = $this->_getPlugin();
 		foreach($this->_getFormFields() as $fieldName => $fieldType) {
@@ -113,33 +113,34 @@ class PURLSettingsForm extends Form {
 	/**
 	 * @copydoc Form::readInputData()
 	 */
-	function readInputData() {
+	public function readInputData() {
 		$this->readUserVars(array_keys($this->_getFormFields()));
 	}
 
 	/**
 	 * @copydoc Form::execute()
 	 */
-	function execute() {
+	public function execute(...$functionArgs){
 		$contextId = $this->_getContextId();
 		$plugin = $this->_getPlugin();
 		foreach($this->_getFormFields() as $fieldName => $fieldType) {
 			$plugin->updateSetting($contextId, $fieldName, $this->getData($fieldName), $fieldType);
 		}
+		parent::execute(...$functionArgs);
 	}
 
 	//
 	// Private helper methods
 	//
-	function _getFormFields() {
+	public function _getFormFields() {
 		return array(
 			'enableIssuePURL' => 'bool',
-			'enableSubmissionPURL' => 'bool',
+			'enablePublicationPURL' => 'bool',
 			'enableRepresentationPURL' => 'bool',
 			'purlPrefix' => 'string',
 			'purlSuffix' => 'string',
 			'purlIssueSuffixPattern' => 'string',
-			'purlSubmissionSuffixPattern' => 'string',
+			'purlPublicationSuffixPattern' => 'string',
 			'purlRepresentationSuffixPattern' => 'string',
 			'purlResolver' => 'string',
 		);

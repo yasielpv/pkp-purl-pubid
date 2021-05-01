@@ -42,7 +42,7 @@ msgstr ""
 msgid "plugins.pubIds.purl.manager.settings.enableIssuePURL"
 msgstr "Issues"
 
-msgid "plugins.pubIds.purl.manager.settings.enableSubmissionPURL"
+msgid "plugins.pubIds.purl.manager.settings.enablePublicationPURL"
 msgstr "Articles"
 
 msgid "plugins.pubIds.purl.manager.settings.enableRepresentationPURL"
@@ -56,6 +56,24 @@ msgstr "The PURL prefix is the fix, never changing part of the PURL."
 
 msgid "plugins.pubIds.purl.manager.settings.purlSuffix"
 msgstr "PURL Suffix"
+
+msgid "plugins.pubIds.purl.editor.missingPrefix"
+msgstr "The PURL must begin with {$purlPrefix}."
+
+msgid "plugins.pubIds.purl.editor.purl.description"
+msgstr "The PURL must begin with {$prefix}."
+
+msgid "plugins.pubIds.purl.editor.missingIssue"
+msgstr "You can not generate a PURL until this publication has been assigned to an issue."
+
+msgid "plugins.pubIds.purl.editor.missingParts"
+msgstr "You can not generate a PURL because one or more parts of the PURL pattern are missing data. You may need to assign the publication to an issue, set a publisher ID or enter page numbers."
+
+msgid "plugins.pubIds.purl.editor.preview.publication"
+msgstr "The PURL for this publication will be {$purl}."
+
+msgid "plugins.pubIds.purl.editor.preview.publication.none"
+msgstr "A PURL has not been assigned to this publication."
 
 msgid "plugins.pubIds.purl.manager.settings.purlSuffix.description"
 msgstr ""
@@ -182,6 +200,12 @@ msgstr ""
 msgid "plugins.pubIds.purl.editor.assignPURL"
 msgstr "Assign the PURL {$pubId} to this {$pubObjectType}"
 
+msgid "plugins.pubIds.purl.editor.preview.galleys"
+msgstr "Galley: {$galleyLabel}"
+
+msgid "plugins.pubIds.purl.editor.preview.objects"
+msgstr "Item"
+
 msgid "plugins.pubIds.purl.editor.assignPURL.emptySuffix"
 msgstr "The PURL cannot be assigned because the custom suffix is missing."
 
@@ -192,3 +216,9 @@ msgstr ""
 
 msgid "plugins.pubIds.purl.editor.assignPURL.assigned"
 msgstr "The PURL {$pubId} has been assigned."
+
+msgid "plugins.pubIds.purl.editor.purl.assignPurl"
+msgstr "Assign"
+
+msgid "plugins.pubIds.purl.editor.purl.clearPurl"
+msgstr "Clear"											   

@@ -24,7 +24,7 @@
 		<p class="pkp_help">{translate key="plugins.pubIds.purl.manager.settings.explainPURLs"}</p>
 		{fbvFormSection list="true"}
 			{fbvElement type="checkbox" label="plugins.pubIds.purl.manager.settings.enableIssuePURL" id="enableIssuePURL" maxlength="40" checked=$enableIssuePURL|compare:true}
-			{fbvElement type="checkbox" label="plugins.pubIds.purl.manager.settings.enableSubmissionPURL" id="enableSubmissionPURL" maxlength="40" checked=$enableSubmissionPURL|compare:true}
+			{fbvElement type="checkbox" label="plugins.pubIds.purl.manager.settings.enablePublicationPURL" id="enablePublicationPURL" maxlength="40" checked=$enablePublicationPURL|compare:true}
 			{fbvElement type="checkbox" label="plugins.pubIds.purl.manager.settings.enableRepresentationPURL" id="enableRepresentationPURL" maxlength="40" checked=$enableRepresentationPURL|compare:true}
 		{/fbvFormSection}
 	{/fbvFormArea}
@@ -52,7 +52,7 @@
 			{fbvElement type="radio" id="purlSuffixPattern" name="purlSuffix" value="pattern" label="plugins.pubIds.purl.manager.settings.purlSuffixPattern" checked=$purlSuffix|compare:"pattern"}
 			<p class="pkp_help">{translate key="plugins.pubIds.purl.manager.settings.purlSuffixPattern.example"}</p>
 			{fbvElement type="text" label="plugins.pubIds.purl.manager.settings.purlSuffixPattern.issues" id="purlIssueSuffixPattern" value=$purlIssueSuffixPattern maxlength="40" inline=true size=$fbvStyles.size.MEDIUM}
-			{fbvElement type="text" label="plugins.pubIds.purl.manager.settings.purlSuffixPattern.submissions" id="purlSubmissionSuffixPattern" value=$purlSubmissionSuffixPattern maxlength="40" inline=true size=$fbvStyles.size.MEDIUM}
+			{fbvElement type="text" label="plugins.pubIds.purl.manager.settings.purlSuffixPattern.submissions" id="purlPublicationSuffixPattern" value=$purlPublicationSuffixPattern maxlength="40" inline=true size=$fbvStyles.size.MEDIUM}
 			{fbvElement type="text" label="plugins.pubIds.purl.manager.settings.purlSuffixPattern.representations" id="purlRepresentationSuffixPattern" value=$purlRepresentationSuffixPattern maxlength="40" inline=true size=$fbvStyles.size.MEDIUM}
 		{/fbvFormSection}
 	{/fbvFormArea}

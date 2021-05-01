@@ -41,7 +41,7 @@ msgstr ""
 msgid "plugins.pubIds.purl.manager.settings.enableIssuePURL"
 msgstr "Números"
 
-msgid "plugins.pubIds.purl.manager.settings.enableSubmissionPURL"
+msgid "plugins.pubIds.purl.manager.settings.enablePublicationPURL"
 msgstr "Artículos"
 
 msgid "plugins.pubIds.purl.manager.settings.enableRepresentationPURL"
@@ -143,6 +143,9 @@ msgstr "galerada"
 msgid "plugins.pubIds.purl.editor.customSuffixMissing"
 msgstr "No se puede asignar un PURL porque falta el sufijo personalizado."
 
+msgid "plugins.pubIds.purl.editor.purl.description"
+msgstr "El PURL debe empezar con {$prefix}."
+
 msgid "plugins.pubIds.purl.editor.patternNotResolved"
 msgstr "No se puede asignar un PURL porque contiene patrones sin resolver."
 
@@ -153,6 +156,18 @@ msgstr ""
 
 msgid "plugins.pubIds.purl.editor.assigned"
 msgstr "El PURL asignado a este {$pubObjectType}."
+
+msgid "plugins.pubIds.purl.editor.preview.objects"
+msgstr "Ítem"
+
+msgid "plugins.pubIds.purl.editor.preview.galleys"
+msgstr "Galerada: {$galleyLabel}"
+
+msgid "plugins.pubIds.purl.editor.preview.publication.none"
+msgstr "No se ha asignado ningún PURL a esta publicación."
+
+msgid "plugins.pubIds.purl.editor.preview.publication"
+msgstr "El PURL de esta publicación será {$purl}."
 
 msgid "plugins.pubIds.purl.editor.purlSuffixCustomIdentifierNotUnique"
 msgstr ""
@@ -177,6 +192,16 @@ msgstr ""
 "Use la siguiente opción para limpiar los PURLs de todos los objetos "
 "(artículos y galerias) actualmente programados para este número."
 
+msgid "plugins.pubIds.purl.editor.missingParts"
+msgstr ""
+"No puede generar un PURL porque una o más partes del patrón PURL no se "
+"encuentran. Sería necesario asignar la publicación a un número, establecer "
+"un identificador editorial o añadir los números de página."
+
+msgid "plugins.pubIds.purl.editor.missingIssue"
+msgstr ""
+"No puede generar un PURL hasta que esta publicación haya sido asignada a un "
+"número."											  
 #. assignment form
 msgid "plugins.pubIds.purl.editor.assignPURL"
 msgstr "Asignar el PURL {$pubId} a este {$pubObjectType}"
@@ -190,3 +215,9 @@ msgstr ""
 
 msgid "plugins.pubIds.purl.editor.assignPURL.assigned"
 msgstr "Se ha asignado el PURL {$pubId}."
+
+msgid "plugins.pubIds.purl.editor.purl.assignPurl"
+msgstr "Asignar"
+
+msgid "plugins.pubIds.purl.editor.purl.clearPurl"
+msgstr "Limpiar"											   

@@ -52,9 +52,9 @@
 {/if}
 {* issue pub object *}
 {if $pubObjectType == 'Issue'}
-	{assign var=enableSubmissionPURL value=$pubIdPlugin->getSetting($currentContext->getId(), "enableSubmissionPURL")}
+	{assign var=enablePublicationPURL value=$pubIdPlugin->getSetting($currentContext->getId(), "enablePublicationPURL")}
 	{assign var=enableRepresentationPURL value=$pubIdPlugin->getSetting($currentContext->getId(), "enableRepresentationPURL")}
-	{if $enableSubmissionPURL || $enableRepresentationPURL}
+	{if $enablePublicationPURL || $enableRepresentationPURL}
 		{if !$formArea}
 			{assign var="formAreaTitle" value="plugins.pubIds.purl.editor.purl"}
 		{else}
